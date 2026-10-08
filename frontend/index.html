@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ancestría</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Ancestría</h1>
+        <p class="bajada">
+          441 muestras de ADN de seis lugares de la Argentina, leídas en 99 posiciones del genoma.
+          ¿Se parecen entre sí las muestras de una misma ciudad?
+        </p>
+      </header>
+
+      <section class="panel">
+        <h2>Tabla de frecuencias</h2>
+        <div class="controles">
+          <label for="snp">Posición del genoma</label>
+          <select id="snp"></select>
+        </div>
+        <div id="avisoTabla" class="aviso" hidden></div>
+        <div class="tablaScroll">
+          <table id="tabla">
+            <thead id="tablaHead"></thead>
+            <tbody id="tablaBody"></tbody>
+          </table>
+        </div>
+        <p class="pie">
+          Cada columna es una ciudad y cada fila un genotipo. El número es qué proporción de las
+          muestras de esa ciudad tienen ese genotipo en esta posición, contando sólo las que se
+          pudieron leer.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Muestras inventadas <span class="etiqueta">consigna manija</span></h2>
+        <p class="bajada">
+          Seis muestras armadas a mano, cada una imitando a una ciudad. ¿Les da el puntaje más alto
+          la ciudad con la que fueron armadas?
+        </p>
+        <div class="controles">
+          <label for="falsa">Muestra</label>
+          <select id="falsa"></select>
+          <button id="comparar">Comparar</button>
+        </div>
+        <div id="avisoFalsas" class="aviso" hidden></div>
+        <div id="resultado"></div>
+      </section>
+    </main>
+  </body>
+</html>
