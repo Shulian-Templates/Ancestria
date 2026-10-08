@@ -1,6 +1,7 @@
 {
   "name": "ancestria",
   "version": "1.0.0",
+  "license": "GPL-3.0-only",
   "description": "Contadores y acumuladores sobre genotipos: armar la tabla de frecuencias por ciudad",
   "type": "module",
   "engines": {
