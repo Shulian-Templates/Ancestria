@@ -5,6 +5,10 @@ Contar, acumular y dividir sobre 441 muestras de ADN para armar una tabla de fre
 Los datos crudos, tal como vinieron, también están en `data/` (el `.csv` separado por `;`).
 El ejercicio no los usa: trabaja con los JSON que salieron de convertirlos.
 
+## Antes de empezar
+
+Descarguen el archivo de Google Docs que hicieron la clase pasada, y ponganlo en la carpeta `informe/`.
+
 ## Consigna base
 
 Hay 441 muestras de ADN de seis lugares de la Argentina. De cada persona se leyeron 99
